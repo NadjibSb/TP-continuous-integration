@@ -12,7 +12,15 @@ pipeline {
     }
     stage('Mail Notification') {
       steps {
-        mail(subject: '[Jenkins][Build]', body: 'Build success', from: 'fn_souab@esi.dz', to: 'fn_souab@esi.dz')
+        echo "Mail notification"
+      }
+      post{
+        success{
+          mail(subject: '[Jenkins][Build success]', body: 'Build success', from: 'fn_souab@esi.dz', to: 'fn_souab@esi.dz')
+        }
+        failure{
+          mail(subject: '[Jenkins][Build failure]', body: 'Build failure', from: 'fn_souab@esi.dz', to: 'fn_souab@esi.dz')
+        }
       }
     }
     stage('Code Analysis') {
