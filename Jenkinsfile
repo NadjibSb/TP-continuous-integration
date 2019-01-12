@@ -7,7 +7,7 @@ pipeline {
         sh 'gradle jar'
         sh 'gradle javadoc'
       }
-    }
+    },
     stage('Mail Notification'){
       post{
         success{
