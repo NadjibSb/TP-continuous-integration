@@ -17,10 +17,7 @@ pipeline {
       parallel {
         stage('Code Analysis') {
           steps {
-            withSonarQubeEnv('sonar') {
-              sh '/media/nadjib/Data/2CS/Outils/Libraries/sonar-scanner-cli-3.3.0.1492-linux/bin/sonar-scanner'
-            }
-
+            sh '/media/nadjib/Data/2CS/Outils/Libraries/sonar-scanner-cli-3.3.0.1492-linux/bin/sonar-scanner'
           }
         }
         stage('Test reporting') {
