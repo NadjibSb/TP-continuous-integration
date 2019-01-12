@@ -9,18 +9,15 @@ pipeline {
         archiveArtifacts 'build/libs/*.jar'
         archiveArtifacts 'build/docs/javadoc/'
       }
-    }
-    stage('Mail Notification') {
-      steps {
-        echo "Mail notification"
-      }
       post{
-        success{
-          mail(subject: '[Jenkins][Build success]', body: 'Build success', from: 'fn_souab@esi.dz', to: 'fn_souab@esi.dz')
-        }
         failure{
           mail(subject: '[Jenkins][Build failure]', body: 'Build failure', from: 'fn_souab@esi.dz', to: 'fn_souab@esi.dz')
         }
+      }
+    }
+    stage('Mail Notification') {
+      steps {
+        mail(subject: '[Jenkins][Build success]', body: 'Build success', from: 'fn_souab@esi.dz', to: 'fn_souab@esi.dz')
       }
     }
     stage('Code Analysis') {
@@ -36,7 +33,7 @@ pipeline {
         }
         stage('Test reporting') {
           steps {
-            jacoco(buildOverBuild: true, maximumMethodCoverage: '100', minimumClassCoverage: '100', minimumLineCoverage: '100')
+            jacoco(buildOverBuild: true)
           }
         }
       }
@@ -48,7 +45,7 @@ pipeline {
     }
     stage('Slack Notification') {
       steps {
-        slackSend(message: 'Deployment success')
+        slackSend(message: 'Deployment success - ${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}"')
       }
     }
   }
