@@ -15,11 +15,7 @@ pipeline {
     }
     stage('Code Analysis') {
       steps {
-        withSonarQubeEnv('Sonar-scanner') {
-          sh 'sonar-scanner'
-          waitForQualityGate true
-        }
-
+        sh 'sonar-scanner'
       }
     }
   }
