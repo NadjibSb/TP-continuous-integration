@@ -30,5 +30,15 @@ pipeline {
         }
       }
     }
+    stage('Deployment') {
+      steps {
+        sh 'gradle uploadArchives'
+      }
+    }
+    stage('Slack Notification') {
+      steps {
+        slackSend(message: 'Deployment success')
+      }
+    }
   }
 }
