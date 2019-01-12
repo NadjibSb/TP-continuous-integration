@@ -10,7 +10,7 @@ pipeline {
     }
     stage('Mail Notification') {
       steps {
-        mail(subject: '[Jenkins][Build]', body: 'Build success', bcc: 'fn_souab@esi.dz')
+        mail(subject: '[Jenkins][Build]', body: 'Build success', from: 'fn_souab@esi.dz', to: 'fn_souab@esi.dz')
       }
     }
     stage('Code Analysis') {
