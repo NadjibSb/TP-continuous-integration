@@ -7,20 +7,6 @@ pipeline {
         sh 'gradle jar'
         sh 'gradle javadoc'
       }
-    },
-    stage('Mail Notification'){
-      post{
-        success{
-          mail ( subject: '[Jenkins][MatrixCalculator][Build]',
-                  body: 'Build success',
-                  bcc: 'fn_souab@esi.dz')
-        }
-        failure{
-          mail ( subject: '[Jenkins][MatrixCalculator][Build]',
-                  body: 'Build failure',
-                  bcc: 'fn_souab@esi.dz')
-        }
-      }
     }
   }
 }
