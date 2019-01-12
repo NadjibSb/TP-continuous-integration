@@ -7,7 +7,7 @@ pipeline {
         sh 'gradle jar'
         sh 'gradle javadoc'
         archiveArtifacts 'build/libs/*.jar'
-        archiveArtifacts 'build/docs'
+        archiveArtifacts 'build/docs/javadoc/com/*'
       }
     }
     stage('Mail Notification') {
