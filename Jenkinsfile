@@ -15,7 +15,7 @@ pipeline {
     }
     stage('Code Analysis') {
       steps {
-        sh 'sonar-scanner'
+        sh '/media/nadjib/Data/2CS/Outils/Libraries/sonar-scanner-cli-3.3.0.1492-linux/bin/sonar-scanner'
       }
     }
   }
