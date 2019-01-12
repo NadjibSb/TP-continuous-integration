@@ -7,17 +7,23 @@ pipeline {
         sh 'gradle jar'
         sh 'gradle javadoc'
         archiveArtifacts 'build/libs/*.jar'
-        archiveArtifacts 'build/docs/javadoc'
+        archiveArtifacts 'build/docs/javadoc/'
       }
       post{
         failure{
-          mail(subject: '[Jenkins][Build failure]', body: 'Build failure', from: 'fn_souab@esi.dz', to: 'fn_souab@esi.dz')
+          mail(subject: '[Jenkins][Build failure]', 
+               body: "BUILD FAILURE : ${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}", 
+               from: 'fn_souab@esi.dz', 
+               to: 'fn_souab@esi.dz')
         }
       }
     }
     stage('Mail Notification') {
       steps {
-        mail(subject: '[Jenkins][Build success]', body: 'Build success', from: 'fn_souab@esi.dz', to: 'fn_souab@esi.dz')
+        mail(subject: '[Jenkins][Build success]', 
+             body: "BUILD SUCCESS : ${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}", 
+             from: 'fn_souab@esi.dz', 
+             to: 'fn_souab@esi.dz')
       }
     }
     stage('Code Analysis') {
@@ -45,7 +51,7 @@ pipeline {
     }
     stage('Slack Notification') {
       steps {
-        slackSend(message: "Deployment success - ${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}")
+        slackSend(message: "Deployment success : ${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}")
       }
     }
   }
