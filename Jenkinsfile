@@ -28,7 +28,7 @@ pipeline {
         }
         stage('Test reporting') {
           steps {
-            jacoco(buildOverBuild: true)
+            jacoco(buildOverBuild: true, maximumMethodCoverage: '100', minimumClassCoverage: '100', minimumLineCoverage: '100')
           }
         }
       }
