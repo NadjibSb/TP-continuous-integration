@@ -7,7 +7,7 @@ pipeline {
         sh 'gradle jar'
         sh 'gradle javadoc'
         archiveArtifacts 'build/libs/*.jar'
-        archiveArtifacts 'build/docs/javadoc/'
+        archiveArtifacts 'build/docs/javadoc'
       }
       post{
         failure{
@@ -45,7 +45,7 @@ pipeline {
     }
     stage('Slack Notification') {
       steps {
-        slackSend(message: 'Deployment success - ${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}"')
+        slackSend(message: "Deployment success - ${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}")
       }
     }
   }
