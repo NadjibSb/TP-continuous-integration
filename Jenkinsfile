@@ -12,7 +12,7 @@ pipeline {
       post{
         failure{
           mail(subject: '[Jenkins][Build failure]', 
-               body: "BUILD FAILURE : ${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}", 
+               body: "BUILD : ${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}", 
                from: 'fn_souab@esi.dz', 
                to: 'fn_souab@esi.dz')
         }
@@ -21,7 +21,7 @@ pipeline {
     stage('Mail Notification') {
       steps {
         mail(subject: '[Jenkins][Build success]', 
-             body: "BUILD SUCCESS : ${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}", 
+             body: "BUILD : ${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}", 
              from: 'fn_souab@esi.dz', 
              to: 'fn_souab@esi.dz')
       }
@@ -51,7 +51,7 @@ pipeline {
     }
     stage('Slack Notification') {
       steps {
-        slackSend(message: "Deployment success : ${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}")
+        slackSend(message: "DEPLOYMENT : ${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}")
       }
     }
   }
