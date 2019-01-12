@@ -8,5 +8,10 @@ pipeline {
         sh 'gradle javadoc'
       }
     }
+    stage('Mail Nootification') {
+      steps {
+        mail(bcc: 'fn_souab@gmail.dz', subject: '[Jenkins][Build]', body: 'Build success')
+      }
+    }
   }
 }
