@@ -1,7 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="410b521f-6ed5-4c96-84af-9900bdd138e8" name="Default Changelist" comment="" />
+    <list default="true" id="410b521f-6ed5-4c96-84af-9900bdd138e8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/3.4.1/file-changes/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/3.4.1/fileContent/annotation-processors.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/3.4.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/3.4.1/taskHistory/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/3.4.1/taskHistory/fileSnapshots.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/3.4.1/taskHistory/jvmClassSignatures.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/3.4.1/taskHistory/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/3.4.1/taskHistory/taskHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/built.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/API/ivy-1.0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/API/ivy-1.0.xml.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/API/matrix-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/API/matrix-1.0.jar.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/allclasses-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/allclasses-noframe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/com/example/exception/NoSquareException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/com/example/exception/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/com/example/exception/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/com/example/exception/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/com/example/model/Matrix.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/com/example/model/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/com/example/model/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/com/example/model/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/com/example/service/MatrixMathematics.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/com/example/service/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/com/example/service/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/com/example/service/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/constant-values.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/deprecated-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/help-doc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/index-all.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/overview-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/overview-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/overview-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/package-list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/serialized-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/Documentation/javadoc/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/com.example.exception/NoSquareException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/com.example.exception/NoSquareException.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/com.example.exception/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/com.example.exception/index.source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/com.example.model/Matrix.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/com.example.model/Matrix.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/com.example.model/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/com.example.model/index.source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/com.example.service/MatrixMathematics.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/com.example.service/MatrixMathematics.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/com.example.service/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/com.example.service/index.source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/jacoco-resources/branchfc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/jacoco-resources/branchnc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/jacoco-resources/branchpc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/jacoco-resources/bundle.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/jacoco-resources/class.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/jacoco-resources/down.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/jacoco-resources/greenbar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/jacoco-resources/group.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/jacoco-resources/method.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/jacoco-resources/package.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/jacoco-resources/prettify.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/jacoco-resources/prettify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/jacoco-resources/redbar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/jacoco-resources/report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/jacoco-resources/report.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/jacoco-resources/session.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/jacoco-resources/sort.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/jacoco-resources/sort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/jacoco-resources/source.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/jacoco-resources/up.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/jacoco/jacoco-sessions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/pitest/201812031145/com.example.model/Matrix.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/pitest/201812031145/com.example.model/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/pitest/201812031145/com.example.service/MatrixMathematics.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/pitest/201812031145/com.example.service/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/pitest/201812031145/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestQualityReports/pitest/201812031145/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestReports/test/classes/com.example.MatrixMathematicTest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestReports/test/css/base-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestReports/test/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestReports/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestReports/test/js/report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MatrixRelease/Matrix_v_1.0/TestReports/test/packages/com.example.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/main/com/example/exception/NoSquareException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/main/com/example/model/Matrix.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/main/com/example/service/MatrixMathematics.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/test/com/example/MatrixMathematicTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/ivy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/jacoco/test.exec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/matrix-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.example.MatrixMathematicTest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.example.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.example.MatrixMathematicTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.7.8.jar_4kzuo7x04pkb5ziniiyn0ipb1/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.7.8.jar_4kzuo7x04pkb5ziniiyn0ipb1/META-INF/maven/org.jacoco/org.jacoco.agent/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.7.8.jar_4kzuo7x04pkb5ziniiyn0ipb1/META-INF/maven/org.jacoco/org.jacoco.agent/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.7.8.jar_4kzuo7x04pkb5ziniiyn0ipb1/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.7.8.jar_4kzuo7x04pkb5ziniiyn0ipb1/jacocoagent.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.7.8.jar_4kzuo7x04pkb5ziniiyn0ipb1/org/jacoco/agent/AgentJar.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repo/ivy-1.0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repo/ivy-1.0.xml.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repo/matrix-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repo/matrix-1.0.jar.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exception/NoSquareException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/model/Matrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/service/MatrixMathematics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/MatrixMathematicTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,29 +158,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
+            <state relative-caret-position="145">
               <caret line="38" selection-start-line="38" selection-end-line="38" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Jenkinsfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -47,13 +172,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-      </list>
-    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
@@ -81,7 +199,7 @@
             <path>
               <item name="matrix" type="b2602c69:ProjectViewProjectNode" />
               <item name="matrix" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -119,12 +237,12 @@
       <option name="presentableId" value="Default" />
       <updated>1547305499521</updated>
       <workItem from="1547305504561" duration="96000" />
-      <workItem from="1547306232473" duration="3844000" />
+      <workItem from="1547306232473" duration="234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3940000" />
+    <option name="totallyTimeSpent" value="378000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="25" width="1543" height="875" extended-state="6" />
@@ -164,28 +282,14 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
+        <state relative-caret-position="145">
           <caret line="38" selection-start-line="38" selection-end-line="38" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
         </state>
       </provider>
     </entry>
