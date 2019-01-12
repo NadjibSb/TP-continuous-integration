@@ -15,8 +15,11 @@ pipeline {
     }
     stage('Code Analysis') {
       steps {
-        sh '/media/nadjib/Data/2CS/Outils/Libraries/sonar-scanner-cli-3.3.0.1492-linux/bin/sonar-scanner'
-        waitForQualityGate true
+        withSonarQubeEnv('sonar') {
+          sh '/media/nadjib/Data/2CS/Outils/Libraries/sonar-scanner-cli-3.3.0.1492-linux/bin/sonar-scanner'
+          waitForQualityGate true
+        }
+
       }
     }
   }
