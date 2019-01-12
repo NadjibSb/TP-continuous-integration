@@ -13,5 +13,14 @@ pipeline {
         mail(subject: '[Jenkins][Build]', body: 'Build success', bcc: 'fn_souab@esi.dz')
       }
     }
+    stage('Code Analysis') {
+      steps {
+        withSonarQubeEnv('Sonar-scanner') {
+          sh 'sonar-scanner'
+        }
+
+        waitForQualityGate true
+      }
+    }
   }
 }
