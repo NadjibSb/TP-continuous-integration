@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.MatrixMathematicTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-01-12T15:19:03" hostname="HP-EliteBook-820-G3" time="0.028">
+  <properties/>
+  <testcase name="createSubMatrix" classname="com.example.MatrixMathematicTest" time="0.02"/>
+  <testcase name="cofactor" classname="com.example.MatrixMathematicTest" time="0.001"/>
+  <testcase name="determinant" classname="com.example.MatrixMathematicTest" time="0.0"/>
+  <testcase name="cofactor2" classname="com.example.MatrixMathematicTest" time="0.001"/>
+  <testcase name="determinant2" classname="com.example.MatrixMathematicTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
