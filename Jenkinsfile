@@ -8,11 +8,9 @@ pipeline {
         sh 'gradle javadoc'
       }
     }
-    stage('Mail Nootification') {
+    stage('Mail Notification') {
       steps {
-        post() {
-          mail(subject: '[Jenkins][MatrixCalculator][Build]', body: 'Build success', bcc: 'fn_souab@esi.dz')
-        }
+        mail(subject: '[Jenkins][Build]', body: 'Build success', bcc: 'fn_souab@esi.dz')
       }
     }
   }
