@@ -17,9 +17,9 @@ pipeline {
       steps {
         withSonarQubeEnv('Sonar-scanner') {
           sh 'sonar-scanner'
+          waitForQualityGate true
         }
 
-        waitForQualityGate true
       }
     }
   }
