@@ -2,19 +2,20 @@ pipeline {
   agent any
   stages {
     stage('build') {
-      post {
-        failure {
-          mail(subject: '[Jenkins][Build failure]', body: "BUILD : ${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}", from: 'fn_souab@esi.dz', to: 'fn_souab@esi.dz')
-
-        }
-
-      }
       steps {
         sh 'gradle build'
         sh 'gradle jar'
         sh 'gradle javadoc'
         archiveArtifacts 'build/libs/*.jar'
         archiveArtifacts 'build/docs/javadoc/'
+      }
+      post {
+        failure {
+          mail(subject: '[Jenkins][Build failure]', 
+               body: "BUILD : ${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}", 
+               from: 'fn_souab@esi.dz', 
+               to: 'fn_souab@esi.dz')
+        }
       }
     }
     stage('Mail Notification') {
@@ -29,7 +30,6 @@ pipeline {
             withSonarQubeEnv('sonareqube') {
               sh '/media/nadjib/Data/2CS/Outils/Libraries/sonar-scanner-cli-3.3.0.1492-linux/bin/sonar-scanner'
             }
-
             waitForQualityGate true
           }
         }
@@ -45,7 +45,6 @@ pipeline {
         not {
           changeRequest target: 'master'
         }
-
       }
       steps {
         sh 'gradle uploadArchives'
@@ -56,7 +55,6 @@ pipeline {
         not {
           changeRequest target: 'master'
         }
-
       }
       steps {
         slackSend(message: "DEPLOYMENT : ${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}")
