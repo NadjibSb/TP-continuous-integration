@@ -1,8 +1,0 @@
--classpath '/media/nadjib/Data/2CS/Outils/TP8-Jenkis/matrix/build/classes/main:/media/nadjib/Data/2CS/Outils/TP8-Jenkis/matrix/build/resources/main'
--d '/media/nadjib/Data/2CS/Outils/TP8-Jenkis/matrix/build/docs/javadoc'
--doctitle 'matrix 1.0 API'
--quiet 
--windowtitle 'matrix 1.0 API'
-'/media/nadjib/Data/2CS/Outils/TP8-Jenkis/matrix/src/main/java/com/example/exception/NoSquareException.java'
-'/media/nadjib/Data/2CS/Outils/TP8-Jenkis/matrix/src/main/java/com/example/model/Matrix.java'
-'/media/nadjib/Data/2CS/Outils/TP8-Jenkis/matrix/src/main/java/com/example/service/MatrixMathematics.java'
