@@ -45,11 +45,13 @@ pipeline {
       }
     }
     stage('Deployment') {
+      when { not { changeRequest target: 'master'}}
       steps {
         sh 'gradle uploadArchives'
       }
     }
     stage('Slack Notification') {
+      when { not { changeRequest target: 'master'}}
       steps {
         slackSend(message: "DEPLOYMENT : ${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}")
       }
