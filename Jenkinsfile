@@ -2,6 +2,13 @@ pipeline {
   agent any
   stages {
     stage('build') {
+      post {
+        failure {
+          mail(subject: '[Jenkins][Build failure]', body: "BUILD : ${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}", from: 'fn_souab@esi.dz', to: 'fn_souab@esi.dz')
+
+        }
+
+      }
       steps {
         sh 'gradle build'
         sh 'gradle jar'
@@ -9,21 +16,10 @@ pipeline {
         archiveArtifacts 'build/libs/*.jar'
         archiveArtifacts 'build/docs/javadoc/'
       }
-      post{
-        failure{
-          mail(subject: '[Jenkins][Build failure]', 
-               body: "BUILD : ${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}", 
-               from: 'fn_souab@esi.dz', 
-               to: 'fn_souab@esi.dz')
-        }
-      }
     }
     stage('Mail Notification') {
       steps {
-        mail(subject: '[Jenkins][Build success]', 
-             body: "BUILD : ${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}", 
-             from: 'fn_souab@esi.dz', 
-             to: 'fn_souab@esi.dz')
+        mail(subject: '[Jenkins][Build success]', body: "BUILD : ${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}", from: 'fn_souab@esi.dz', to: 'fn_souab@esi.dz')
       }
     }
     stage('Code Analysis') {
@@ -45,13 +41,23 @@ pipeline {
       }
     }
     stage('Deployment') {
-      when { not { changeRequest target: 'master'}}
+      when {
+        not {
+          changeRequest target: 'master'
+        }
+
+      }
       steps {
         sh 'gradle uploadArchives'
       }
     }
     stage('Slack Notification') {
-      when { not { changeRequest target: 'master'}}
+      when {
+        not {
+          changeRequest target: 'master'
+        }
+
+      }
       steps {
         slackSend(message: "DEPLOYMENT : ${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}")
       }
