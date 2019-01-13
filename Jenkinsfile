@@ -1,11 +1,6 @@
 pipeline {
   agent any
   stages {
-    stage('source') {
-      steps {
-        git(branch: 'master', url: 'git@github.com:NadjibSb/TP-continuous-integration.git')
-      }
-    }
     stage('build') {
       post {
         failure {
